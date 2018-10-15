@@ -81,15 +81,15 @@ $arr_Uris | ForEach-Object {
     
     $URI = $_
         Describe "Given User navigates to $URI"{
-
             Context "When User sends Get request"{
-
+               [Int32] $statusCode = ($URI | Get-URLStatus -errorlog)
+            
                     It 'Then status code should be 200'{
-                       $URI | Get-URLStatus -errorlog  | Should -Be 200
+                       $statusCode  | Should be 200
                     }
-
                 }
-          
-          }
+
+            }
+
     }
 }
