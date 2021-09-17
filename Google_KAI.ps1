@@ -75,6 +75,7 @@ function Invoke-GoogleKAI{
 ### TC - Get request
 ## ("https://www.google.com","https://www.facebook.com","http://vk.com/sdf")
 # Status code should be 200
+# Status code should be 200
 
 $arr_Uris = @("https://www.google.com","https://www.facebook.com","http://vk.com/sdf")
 
