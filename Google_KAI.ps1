@@ -28,6 +28,7 @@
                
                 #Getting status code
                 #200 means no Http request error
+                #200 means no Http request error
                 $status_code = (Invoke-WebRequest -Uri $URI -UseBasicParsing -DisableKeepAlive).StatusCode
 
                 if ($status_code -eq 200){
